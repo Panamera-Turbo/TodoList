@@ -9,4 +9,14 @@
 ## 参考文档
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
+```
+./conponents:
+    mchatroom:没用
+    collection-item:一条一条的收集项
+    right-nav：右划唤出的侧边栏
+    top-calendar：顶部的日历（可以滑动的那个）
+
+./custom-tab-bar:下面那几个按钮
+
+```
 
