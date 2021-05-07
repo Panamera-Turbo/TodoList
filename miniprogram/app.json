@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/collection/collection",
+    "pages/date/date",
+    "pages/record/record"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0399F9",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/collection/collection",
+        "text": "收集箱"
+      },
+      {
+        "pagePath": "pages/date/date",
+        "text": "日程"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "text": "回顾"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

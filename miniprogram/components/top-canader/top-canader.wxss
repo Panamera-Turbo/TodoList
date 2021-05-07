@@ -1,0 +1,30 @@
+.Component {
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  padding: 15rpx;
+}
+
+
+.dayView {
+  text-align: center;
+  margin: 20rpx;
+}
+
+.day {
+  color: #CCCCCC;
+  text-align: center;
+  font-size: 25rpx;
+}
+
+.date {
+  font-size: 22rpx;
+  width: 44rpx;
+  height: 44rpx;
+}
+
+.active .date {
+  border-radius: 50%;
+  background-color: #0399F9;
+  color: #fff;
+}

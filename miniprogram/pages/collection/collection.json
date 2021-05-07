@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "collection-item":"../../components/collection-item/collection-item",
+    "right-nav":"../../components/right-nav/right-nav"
+  }
+}

@@ -1,0 +1,10 @@
+<view class="Page" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+  <right-nav animation="{{slide}}"></right-nav>
+  <top-canader class="topCanader" bind:changeDay="changeDay"></top-canader>
+  <view class="line"></view>
+  <view class="item-view">
+    <view class="item-content" wx:for="{{itemSet}}" wx:key="index">
+      <collection-item id="{{item._id}}" content="{{item.todo}}" checked="{{item.checked}}" bind:deleteItem="deleteItem" bind:checkedChange="handleCheckedChange"></collection-item>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+<view class="page" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+  <right-nav animation="{{slide}}"></right-nav>
+  <view class="rate">
+    <i-cell-group>
+      <i-cell title="禁用点击和手势选择星">
+        <i-rate disabled="{{true}}" bind:change="onChange" value="{{starIndex}}">
+        </i-rate>
+      </i-cell>
+    </i-cell-group>
+    <view class="rateText">
+      <view class="week">今日完成 <text class="weekNum">{{checkedCount}}</text></view>
+      <view class="weekRate">今日评价<text class="weekRateJudge"> {{comment}}</text></view>
+    </view>
+  </view>
+  <view class="doneTitle">完成任务</view>
+
+  <view class="item-view">
+    <view class="item-content" wx:for="{{checkedSet}}" wx:key="index">
+      <collection-item id="{{item._id}}" content="{{item.todo}}" checked="{{item.checked}}" bind:deleteItem="deleteItem"
+        bind:checkedChange="handleCheckedChange"></collection-item>
+    </view>
+  </view>
+
+</view>

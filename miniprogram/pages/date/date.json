@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "top-canader":"../../components/top-canader/top-canader",
+    "collection-item":"../../components/collection-item/collection-item",
+    "right-nav":"../../components/right-nav/right-nav"
+  }
+}

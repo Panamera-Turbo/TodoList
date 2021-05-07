@@ -1,0 +1,41 @@
+.page {
+  position: relative;
+  height: 90vh;
+  z-index: 0;
+}
+
+right-nav {
+  position: absolute;
+  left: -75vw;
+  opacity: 0;
+  z-index: 1;
+}
+
+.rate {
+  margin: 0;
+  padding: 20rpx 0;
+  text-align: center;
+  border-bottom: 1rpx solid #eee;
+}
+
+.rateText{
+  display: flex;
+  margin: 20rpx 0;
+  font-size: 24rpx;
+  color: #999999;
+  justify-content: space-evenly;
+}
+
+.weekNum, .weekRateJudge{
+  font-size: 36rpx;
+  vertical-align: sub;
+  color: #0399F9;
+}
+
+.doneTitle{
+  font-size: 24rpx;
+  text-align: start;
+  padding: 8rpx 10rpx;
+  color: #999999;
+  background-color: #eee;
+}

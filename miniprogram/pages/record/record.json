@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "right-nav":"../../components/right-nav/right-nav",
+    "i-rate":"../../dist/rate/index",
+    "collection-item":"../../components/collection-item/collection-item"
+  }
+}

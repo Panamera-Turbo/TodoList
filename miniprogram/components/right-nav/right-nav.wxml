@@ -1,0 +1,23 @@
+<view class="Component">
+  <view wx:if="{{userInfo}}" class="userInfo">
+    <image class="userImg" mode="widthFix" src="{{userInfo.avatarUrl}}"></image>
+    <view class="userName">{{userInfo.nickName}}</view>
+  </view>
+  <view class="userInfo" wx:else>
+    <button class="login" bindtap="login">Login</button>
+  </view>
+  <view class="set focus">
+    <view class="title">FOCUS</view>
+    <navigator class="setItem" bindtap="switchCollection">
+      <text class="collection iconfont iconfont icon-jilu"></text>
+      <text class="collectionText text">收集箱</text>
+      <text class="collectionNum num">1</text>
+    </navigator>
+    <navigator class="setItem" bindtap="switchDate">
+      <text class="collection iconfont iconfont icon-jilu"></text>
+      <text class="collectionText text">今日待办</text>
+      <text class="collectionNum num">1</text>
+    </navigator>
+   
+  </view>
+</view>

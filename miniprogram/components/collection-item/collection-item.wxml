@@ -1,0 +1,5 @@
+<view class="component">
+  <checkbox class="checked" model:checked="{{checked}}" bindtap="log" disabled="{{checked}}" data-checked="{{checked}}"></checkbox>
+  <text class="content">{{content}}</text>
+  <view class="deleteBtn iconfont icon-cha" bindtap="delete" data-id="{{id}}" ></view>
+</view>

@@ -1,0 +1,21 @@
+.Page{
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+right-nav {
+  position: absolute;
+  left: -75vw;
+  opacity: 0;
+  z-index: 1;
+}
+
+
+
+.line{
+  height: 30rpx;
+  background-color: #F7F6F6;
+  width: 100%;
+}

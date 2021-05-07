@@ -1,0 +1,59 @@
+@import "../../style/iconfont.wxss";
+
+.Component {
+  width: 75vw;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  height: 89vh;
+  z-index: 1000;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+
+.userImg {
+  margin: 20rpx;
+  border-radius: 50%;
+  height: 80rpx;
+  width: 80rpx;
+}
+
+.set{
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx;
+  width: 100%;
+}
+
+.setItem{
+  width: 100%;
+  position: relative;
+}
+
+.title {
+  color: #BBBBBB;
+  font-size: 24rpx;
+}
+
+.setItem{
+  margin:10rpx 5rpx;
+}
+
+.iconfont {
+  color: #037FF9;
+  margin-right: 20rpx;
+}
+
+.text{
+  font-size: 26rpx;
+}
+
+.num{
+  width: 20rpx;
+  position: absolute;
+  right: 60rpx;
+  color: #C0C0C0;
+}

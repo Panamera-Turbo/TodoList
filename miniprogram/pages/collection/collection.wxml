@@ -1,0 +1,36 @@
+<view class="Page" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+  <right-nav animation="{{slide}}"></right-nav>
+
+  <view class="item-view">
+    <view class="item-content" wx:for="{{itemSet}}" wx:key="index">
+      <collection-item id="{{item._id}}" content="{{item.todo}}" checked="{{item.checked}}" bind:deleteItem="deleteItem" bind:checkedChange="handleCheckedChange"></collection-item>
+    </view>
+  </view>
+
+  <!--button-->
+  <view class="add iconfont icon-Addlocation" bindtap="bounceIn"></view>
+  <view class="addInput" animation="{{bounceIn}}" wx:if="{{showInput}}">
+    <view class="addTitle">
+      <view class="titleIcon iconfont icon-icon-test">
+        <text class="titleText">Add New Item</text>
+      </view>
+      <view class="close iconfont icon-cha" bindtap="closeInput"></view>
+    </view>
+    <form class="addForm" bindsubmit="handleSubmit" >
+      <view class="todoInput">
+        <view class="todoInputTitle">todo</view>
+        <input id="todoInput" type="text" name="todo" />
+      </view>
+      <view class="datePicker">
+        <view class="datePickerTitle">date</view>
+        <picker name="datePicker" id="datePicker" mode="date" bindchange="datePickerChange">{{newTodoItem.date}}
+        </picker>
+      </view>
+      <view class="btnView">
+        <button class="subBtn" form-type="submit" plain type="primary" >submit</button>
+        <button class="rstBtn" form-type="reset" plain type="primary">reset</button>
+      </view>
+    </form>
+  </view>
+
+</view>

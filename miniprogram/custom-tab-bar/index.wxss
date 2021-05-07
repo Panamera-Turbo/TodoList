@@ -1,0 +1,22 @@
+/* custom-tab-bar/index.wxss */
+@import "../style/iconfont.wxss";
+
+.iconfont{
+  font-size: 46rpx;
+  color: #0399F9;
+}
+.tabBar{
+  display: flex;
+  height: 150rpx;
+  justify-content: space-around;
+  align-items: center;
+  border-top:1rpx solid #eee;
+}
+
+.tab{
+  padding: 0;
+  text-align: center;
+  height: 70rpx;
+  width: 70rpx;  
+}
+

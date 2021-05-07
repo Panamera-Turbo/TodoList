@@ -1,0 +1,5 @@
+<view class="tabBar">
+  <view animation="{{shrink1}}" class="tab iconfont icon-jilu" bindtap="switchCollection"></view>
+  <view animation="{{shrink2}}" class="tab iconfont icon-richeng" bindtap="switchDate"></view>
+  <view animation="{{shrink3}}" class="tab iconfont icon-cbox-full" bindtap="switchRecord"></view>
+</view>

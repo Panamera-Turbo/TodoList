@@ -1,0 +1,14 @@
+@import "../../style//iconfont.wxss";
+.component{
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1rpx solid #eee;
+  padding: 15rpx;
+}
+
+.deleteBtn{
+  position: absolute;
+  right: 20rpx;
+  font-size: 40rpx;
+}
