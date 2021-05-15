@@ -1,5 +1,5 @@
 <view class="tabBar">
-  <view animation="{{shrink1}}" class="tab iconfont icon-jilu" bindtap="switchCollection"></view>
-  <view animation="{{shrink2}}" class="tab iconfont icon-richeng" bindtap="switchDate"></view>
-  <view animation="{{shrink3}}" class="tab iconfont icon-cbox-full" bindtap="switchRecord"></view>
+  <view  class="tab iconfont icon-jilu {{active==1?'active':''}}" bindtap="switchCollection"></view>
+  <view  class="tab iconfont icon-richeng {{active==2?'active':''}}" bindtap="switchDate"></view>
+  <view  class="tab iconfont icon-cbox-full {{active==3?'active':''}}" bindtap="switchRecord"></view>
 </view>

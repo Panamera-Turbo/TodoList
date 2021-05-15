@@ -118,7 +118,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    if (typeof this.getTabBar === 'function' && this.getTabBar()) {
+      this.getTabBar().setData({
+        active:2 //这个数字是当前页面在tabBar中list数组的索引
+      })
+    }
+
       let today = new Date();
       let year = today.getFullYear();
       let month = today.getMonth() + 1;

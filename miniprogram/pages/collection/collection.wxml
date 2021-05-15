@@ -3,7 +3,8 @@
 
   <view class="item-view">
     <view class="item-content" wx:for="{{itemSet}}" wx:key="index">
-      <collection-item id="{{item._id}}" content="{{item.todo}}" checked="{{item.checked}}" bind:deleteItem="deleteItem" bind:checkedChange="handleCheckedChange"></collection-item>
+      <collection-item id="{{item._id}}" content="{{item.todo}}" checked="{{item.checked}}"
+      date="{{item.date}}" bind:deleteItem="deleteItem" bind:checkedChange="handleCheckedChange"></collection-item>
     </view>
   </view>
 

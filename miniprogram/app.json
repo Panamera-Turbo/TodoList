@@ -7,8 +7,8 @@
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#0399F9",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarTitleText": "WeToDo",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
