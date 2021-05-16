@@ -18,29 +18,29 @@ App({
       success:res=>{
       }
     })
-    wx.showModal({
-      title: '温馨提示',
-      content: '正在请求您的个人信息',
-      success(res) {
-        if (res.confirm) {
-          wx.getUserProfile({
-          desc: "获取你的昵称、头像、地区及性别",
-          success: res => {
-            console.log(res)
-            wx.setStorageSync('userInfo', res.userInfo)
-          },
-          fail: res => {
-             //拒绝授权
-            that.showErrorModal('您拒绝了请求');
-            return;
-          }
-        })} else if (res.cancel) {
-          //拒绝授权 showErrorModal是自定义的提示
-          that.showErrorModal('您拒绝了请求');
-          return;
-        }
-      }
-    })
+    // wx.showModal({
+    //   title: '温馨提示',
+    //   content: '正在请求您的个人信息',
+    //   success(res) {
+    //     if (res.confirm) {
+    //       wx.getUserProfile({
+    //       desc: "获取你的昵称、头像、地区及性别",
+    //       success: res => {
+    //         console.log(res)
+    //         wx.setStorageSync('userInfo', res.userInfo)
+    //       },
+    //       fail: res => {
+    //          //拒绝授权
+    //         that.showErrorModal('您拒绝了请求');
+    //         return;
+    //       }
+    //     })} else if (res.cancel) {
+    //       //拒绝授权 showErrorModal是自定义的提示
+    //       that.showErrorModal('您拒绝了请求');
+    //       return;
+    //     }
+    //   }
+    // })
   
    
     this.globalData = {}

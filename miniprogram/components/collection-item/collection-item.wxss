@@ -1,14 +1,37 @@
 @import "../../style//iconfont.wxss";
-.component{
+
+.component {
+  border-bottom: 1rpx solid #eee;
+}
+
+.main {
   display: flex;
   align-items: center;
   position: relative;
-  border-bottom: 1rpx solid #eee;
   padding: 15rpx;
 }
 
-.deleteBtn{
+.content {
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+
+.deleteBtn {
   position: absolute;
   right: 20rpx;
   font-size: 40rpx;
+}
+
+.today {
+  font-size: 23rpx;
+  color: #2BA7F7;
+  padding: 0 0 15rpx 0;
+  margin-left: 80rpx;
+}
+
+.date{
+  font-size: 23rpx;
+  color: #999E9F;
+  padding: 0 0 15rpx 0;
+  margin-left: 80rpx;
 }

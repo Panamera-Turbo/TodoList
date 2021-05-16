@@ -116,20 +116,27 @@ Page({
         let checkedCount = this.data.checkedSet.length
         let comment = ''
         let factor = checkedCount / AllCount
+        let starIndex = 0;
         if(AllCount == checkedCount){
           comment = "perfect"
+          starIndex = 5
         }else if(factor >= 0.75){
           comment = 'high'
+          starIndex = 4
         }else if( factor > 0.5){
           comment = 'middle'
+          starIndex = 3
         }else if(factor > 0.25){
           comment = 'low'
+          starIndex = 2
         }else{
           comment = 'awful'
+          starIndex = 1
         }
         this.setData({
           checkedCount,
-          comment
+          comment,
+          starIndex
         })
       }
     })
@@ -140,6 +147,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    if (typeof this.getTabBar === 'function' && this.getTabBar()) {
+      this.getTabBar().setData({
+        active:3  //这个数字是当前页面在tabBar中list数组的索引
+      })
+    }
+
     let today = new Date();
     let year = today.getFullYear();
     let month = today.getMonth() + 1;

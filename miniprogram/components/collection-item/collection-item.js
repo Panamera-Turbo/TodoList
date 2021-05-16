@@ -15,14 +15,19 @@ Component({
     checked:{
       type:Boolean,
       value:false
+    },
+    date:{
+      type:String,
+      value:''
     }
+  
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-    // checked:false
+    today:''
   },
 
   /**
@@ -38,5 +43,24 @@ Component({
       let checked = e.currentTarget.dataset.checked;
       this.triggerEvent("checkedChange",checked)
     }
+  },
+
+  lifetimes:{
+  attached(){
+    let today = new Date();
+    let year = today.getFullYear()
+    let month = today.getMonth() + 1;
+    let day = today.getDate();
+    if(month < 10){
+      month = '0' + month
+    }
+    if(day < 10){
+      day = '0' + day
+    }
+    let Today = year + '-' + month + '-' + day
+    this.setData({
+      today:Today
+    })
+  }
   }
 })
